@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://yoursite.com/2020/08/06/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale">
 <meta property="article:published_time" content="2020-08-06T11:48:37.057Z">
 <meta property="article:modified_time" content="2020-08-06T14:45:14.853Z">
 <meta property="article:author" content="cvv">
@@ -40,6 +40,30 @@
 <meta name="generator" content="Hexo 5.0.0"></head>
 
 <body>
+  {% if theme.fireworks %}
+   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+   <script type="text/javascript" src="/js/src/fireworks.js"></script>
+  {% endif %}
+  <!--代码雨-->
+  
+        <!-- 数字雨 -->
+        <canvas id="code_rain_canvas" width="1440" height="900"></canvas>
+        <script type="text/javascript" src="/js/code_rain.js">
+          <style>
+              #code_rain_canvas {
+                position: fixed;
+                right: 0px;
+                bottom: 0px;
+                min-width: 100%;
+                min-height: 100%;
+                height: auto;
+                width: auto;
+                z-index: 4;
+              }
+           </style>
+       </script>
+   
   <div id="container" q-class="show:isCtnShow">
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
@@ -544,7 +568,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">人生短短几个秋&lt;br&gt;不醉不罢休&lt;br&gt;对待生命，我们不妨大胆一些&lt;br&gt;再会，朋友</div>
   	  	
     	</section>
     
