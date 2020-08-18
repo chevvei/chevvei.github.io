@@ -30,7 +30,7 @@
 <meta property="og:description" content="关于hexo的几个坑在这里写你的文章D:\blog\source_posts 这里是站点的访问的目录D:\blog\source 将图片放在D:\blog\source\img目录后，部署以后可以通过 站点+source底下的存放图片目录访问例如https:&#x2F;&#x2F;chevvei.github.io&#x2F;img&#x2F;balcony.jpg markdown语法可以 ！[图片名&#x2F;鼠标放置会提示]（图片地址访问）">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-18T04:07:46.270Z">
-<meta property="article:modified_time" content="2020-08-18T04:21:51.264Z">
+<meta property="article:modified_time" content="2020-08-18T04:31:13.224Z">
 <meta property="article:author" content="cvv">
 <meta name="twitter:card" content="summary">
 
@@ -198,7 +198,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-08-18 12:07:46 / 修改时间：12:21:51" itemprop="dateCreated datePublished" datetime="2020-08-18T12:07:46+08:00">2020-08-18</time>
+              <time title="创建时间：2020-08-18 12:07:46 / 修改时间：12:31:13" itemprop="dateCreated datePublished" datetime="2020-08-18T12:07:46+08:00">2020-08-18</time>
             </span>
 
           
@@ -228,7 +228,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>971</span>
+              <span>1.2k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
@@ -256,7 +256,11 @@
 
 
 <p>set next_site</p>
-<p>‘footer.powered’   索引到zh-CN文件中的footer  ,powered对应的文字<br>next_url里卖弄是文字对应的网址</p>
+<p>‘footer.powered’   索引到zh-CN文件中的footer  ,powered对应的文字<br>next_url里面是文字对应的网址</p>
+<p>这段设置的是&amp;的前一部分<br>‘footer.powered’, next_url(‘<a href="https://chevvei.github.io/img/me.jpg&#39;">https://chevvei.github.io/img/me.jpg&#39;</a>, ‘陈vv’, {class: ‘theme-link’})</p>
+<p>这段设置的是&amp;的后一部分<br>next_url(next_site, ‘我数火车的阳台’, {class: ‘theme-link’})</p>
+<p>跳动的心</p>
+<p>设置好代码还得在theme下的config文件下 搜索heartbeat  ，设置       animation ：true</p>
 
     </div>
 
@@ -436,7 +440,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">1k</span>
+    <span title="站点总字数">2k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
