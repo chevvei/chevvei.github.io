@@ -137,7 +137,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="fa fa-bars fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -153,6 +153,16 @@
         <li class="menu-item menu-item-playlist">
 
     <a href="/playlist/" rel="section"><i class="fa fa-music fa-fw"></i>歌单</a>
+
+  </li>
+        <li class="menu-item menu-item-album">
+
+    <a href="/album/" rel="section"><i class="fas fa-camera-retro fa-fw"></i>相册</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-pencil-square-o fa-fw"></i>留言板</a>
 
   </li>
   </ul>
@@ -221,6 +231,13 @@
             </span>
 
           
+            <span id="/2020/08/08/hexo%E5%AE%9A%E5%88%B6%E5%8C%96%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="post-meta-item leancloud_visitors" data-flag-title="hexo定制化" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
             <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -286,9 +303,7 @@
 <p> 3 使用 MetingJS 播放器</p>
 <p> 在文章里插入：</p>
 
-    <div id="aplayer-Hwxztivk" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="31654455" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
-    ></div>
+    <div id="aplayer-HdoAJWME" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="31654455" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
 
 
 <p>附加 MetingJS 部分有关选项</p>
@@ -311,7 +326,7 @@
 <p>添加页面内嵌 网易云</p>
 <p>修改 themes/next/layout/_macro/sidebar.swig 文件</p>
 <div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=33911781&auto=1&height=66">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="280" height="86" src="//music.163.com/outchain/player?type=2&id=33911781&auto=1&height=66">
     </iframe>
 </div>
 
@@ -440,7 +455,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -605,17 +620,17 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el         : '#valine-comments',
       verify     : false,
-      notify     : false,
+      notify     : true,
       appId      : '9O3CeJyAzHhNWDWBXs7W1Ope-gzGzoHsz',
       appKey     : '1hjWUXFBcUDJV5vUg61FA3Sq',
       placeholder: "ヾﾉ≧∀≦)o是兄弟就来砍我啊！",
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
-      visitor    : false,
+      visitor    : true,
       lang       : '' || 'zh-cn',
       path       : location.pathname,
-      recordIP   : false,
+      recordIP   : true,
       serverURLs : ''
     });
   }, window.Valine);

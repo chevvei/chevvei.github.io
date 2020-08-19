@@ -133,7 +133,7 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+    <a href="/categories/" rel="section"><i class="fa fa-bars fa-fw"></i>分类</a>
 
   </li>
         <li class="menu-item menu-item-archives">
@@ -149,6 +149,16 @@
         <li class="menu-item menu-item-playlist">
 
     <a href="/playlist/" rel="section"><i class="fa fa-music fa-fw"></i>歌单</a>
+
+  </li>
+        <li class="menu-item menu-item-album">
+
+    <a href="/album/" rel="section"><i class="fas fa-camera-retro fa-fw"></i>相册</a>
+
+  </li>
+        <li class="menu-item menu-item-guestbook">
+
+    <a href="/guestbook/" rel="section"><i class="fa fa-pencil-square-o fa-fw"></i>留言板</a>
 
   </li>
   </ul>
@@ -200,9 +210,7 @@
       
       <div class="post-body">
           
-    <div id="aplayer-etsDHVCn" class="aplayer aplayer-tag-marker meting-tag-marker"
-         data-id="3136952023" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"
-    ></div>
+    <div id="aplayer-EZPIXKfx" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="3136952023" data-server="netease" data-type="playlist" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#FF4081"></div>
 
       </div>
       
@@ -282,7 +290,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">8</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -447,17 +455,17 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
     new Valine({
       el         : '#valine-comments',
       verify     : false,
-      notify     : false,
+      notify     : true,
       appId      : '9O3CeJyAzHhNWDWBXs7W1Ope-gzGzoHsz',
       appKey     : '1hjWUXFBcUDJV5vUg61FA3Sq',
       placeholder: "ヾﾉ≧∀≦)o是兄弟就来砍我啊！",
       avatar     : 'mm',
       meta       : guest,
       pageSize   : '10' || 10,
-      visitor    : false,
+      visitor    : true,
       lang       : '' || 'zh-cn',
       path       : location.pathname,
-      recordIP   : false,
+      recordIP   : true,
       serverURLs : ''
     });
   }, window.Valine);
