@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+  <script src="/js/src/photoswipe.min.js?v="></script>
+  <script src="/js/src/photoswipe-ui-default.min.js?v="></script>
+
+
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
@@ -14,12 +18,13 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"chevvei.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"chevvei.github.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"valine","storage":true,"lazyload":false,"nav":null,"activeClass":"valine"},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="关于hexo的几个坑在这里写你的文章D:\blog\source_posts 这里是站点的访问的目录D:\blog\source 将图片放在D:\blog\source\img目录后，部署以后可以通过 站点+source底下的存放图片目录访问例如https:&#x2F;&#x2F;chevvei.github.io&#x2F;img&#x2F;balcony.jpg markdown语法可以 ！[图片名&#x2F;鼠标放置会提示]（图片地址访问）">
@@ -87,6 +92,14 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
+
+
+
+
+
+
+
+
   <div class="container use-motion">
     <div class="headband"></div>
   
@@ -155,9 +168,9 @@
     <a href="/playlist/" rel="section"><i class="fa fa-music fa-fw"></i>歌单</a>
 
   </li>
-        <li class="menu-item menu-item-album">
+        <li class="menu-item menu-item-photos">
 
-    <a href="/album/" rel="section"><i class="fas fa-camera-retro fa-fw"></i>相册</a>
+    <a href="/photos/" rel="section"><i class="fas fa-camera-retro fa-fw"></i>photos</a>
 
   </li>
         <li class="menu-item menu-item-guestbook">
@@ -303,7 +316,9 @@
 <p> 3 使用 MetingJS 播放器</p>
 <p> 在文章里插入：</p>
 
-    <div id="aplayer-xHkVQtqV" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="31654455" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"></div>
+    <div id="aplayer-DKSuDXcT" class="aplayer aplayer-tag-marker meting-tag-marker"
+         data-id="31654455" data-server="netease" data-type="song" data-mode="circulation" data-autoplay="false" data-mutex="true" data-listmaxheight="340px" data-preload="auto" data-theme="#ad7a86"
+    ></div>
 
 
 <p>附加 MetingJS 部分有关选项</p>
@@ -326,7 +341,7 @@
 <p>添加页面内嵌 网易云</p>
 <p>修改 themes/next/layout/_macro/sidebar.swig 文件</p>
 <div id="music163player">
-    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="280" height="86" src="//music.163.com/outchain/player?type=2&id=33911781&auto=1&height=66">
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=86 src="//music.163.com/outchain/player?type=2&id=33911781&auto=1&height=66">
     </iframe>
 </div>
 
@@ -513,7 +528,7 @@
     <i class="fa fa-heartbeat" aria-hidden="true"></i>
   </span>
   
-  <span class="author" itemprop="copyrightHolder">cvv</span>
+<div id="bottomheart" style="cursor:pointer;"><i class="fa fa-"></i></div>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
@@ -568,6 +583,8 @@
   
   <script size="300" alpha="0.6" zIndex="-1" src="/lib/canvas-ribbon/canvas-ribbon.js"></script>
   <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
 
@@ -635,11 +652,6 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 </script>
 
 
-
-  
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
 
  
 
