@@ -37,7 +37,7 @@
 <meta property="og:description" content="相册         视频             function to_vlog(){         document.getElementById(&#39;1&#39;).style.display&#x3D;&#39;none&#39;;         document.getElementById(&#39;2&#39;).style.display&#x3D;&#39;block&#39;;         document.getE">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-19T04:12:18.000Z">
-<meta property="article:modified_time" content="2020-08-25T14:46:33.904Z">
+<meta property="article:modified_time" content="2020-08-27T17:21:38.642Z">
 <meta property="article:author" content="cvv">
 <meta name="twitter:card" content="summary">
 
@@ -279,26 +279,13 @@
         document.getElementById('li_album').setAttribute('class','');
     }
 
-function to_album(){
-        document.getElementById('1').style.display='block';
-        document.getElementById('2').style.display='none';
-        document.getElementById('li_album').setAttribute('class','active');
-        document.getElementById('li_vlog').setAttribute('class','');
-    }
+    function to_album(){
+            document.getElementById('1').style.display='block';
+            document.getElementById('2').style.display='none';
+            document.getElementById('li_album').setAttribute('class','active');
+            document.getElementById('li_vlog').setAttribute('class','');
+        }
 </script>
-
-
-
-
-<link rel="stylesheet" href="../lib/vlog/css/style.css">
-<link rel="stylesheet" href="../lib/album/ins.css">
-<link rel="stylesheet" href="../lib/album/photoswipe.css"> 
-<link rel="stylesheet" href="../lib/album/default-skin/default-skin.css"> 
-
-<div class="instagram itemscope">
-  <a href="https://github.com/chevvei/Blog_Album/tree/master/min_photos" target="_blank" class="open-ins">图片正在加载中…</a>
-</div>
-
 <script>
   (function() {
     var loadScript = function(path) {
@@ -314,8 +301,21 @@ function to_album(){
 
 
 
+<link rel="stylesheet" href="../lib/vlog/css/style.css">
+<link rel="stylesheet" href="../lib/album/ins.css">
+<link rel="stylesheet" href="../lib/album/photoswipe.css"> 
+<link rel="stylesheet" href="../lib/album/default-skin/default-skin.css"> 
 
-<body>
+<div class="instagram itemscope">
+  <a href="https://github.com/chevvei/Blog_Album/tree/master/min_photos" target="_blank" class="open-ins">图片正在加载中…</a>
+</div>
+
+
+
+
+
+
+
 <div class="photos-btn-wrap">
   <a class="photos-btn active" href="javascript:void(0)" target="_blank" rel="external">Photos</a>
 </div>
@@ -329,7 +329,6 @@ function to_album(){
 </div>
 
 
-</body>
 
       </div>
       
@@ -459,6 +458,10 @@ function to_album(){
 
         
 
+
+
+
+
 <div class="copyright">
   
   &copy; 2015 – 
@@ -479,8 +482,9 @@ function to_album(){
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
     <span title="站点阅读时长">5 分钟</span>
 </div>
-  <div class="powered-by"><a href="https://chevvei.github.io/img/me.jpg" class="theme-link">陈vv</a> & <a href="https://chevvei.github.io/img/balcony.jpg" class="theme-link">我数火车的阳台</a> 个人专属
+  <div class="powered-by"><a href="https://chevvei.github.io/img/me.jpg" class="theme-link">陈vv</a> & <a href="https://chevvei.github.io/img/balcony.jpg" class="theme-link">数火车的阳台</a> 个人专属
   </div> 
+
 
 
 
@@ -493,7 +497,22 @@ function to_album(){
 
 
 
+<!-- 新增访客统计代码 -->
 
+<div class="busuanzi-count">
+    <script async="" src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      访问用户： <span class="busuanzi-value" id="busuanzi_value_site_uv"></span> 人
+    </span>
+    <div class="powered-by"></div>
+    <span class="site-uv">
+      <i class="fa fa-eye"></i>
+      访问次数： <span class="busuanzi-value" id="busuanzi_value_site_pv"></span> 次
+    </span>
+   
+</div>
+<!-- 新增访客统计代码 END-->
         
 <div class="busuanzi-count">
   <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
